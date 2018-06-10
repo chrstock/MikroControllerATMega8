@@ -6,7 +6,19 @@ public class Mikrocontroller {
 
 	public Mikrocontroller(String message) {
 		this.message = message;
-		translateASCII(message);
+		
+		for(int i = 0; i <= message.length() - 7;i+=7 ) {
+			translateASCII(message.substring(i, i+7));
+			printAnzeige();
+		}
+	}
+	
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	public String getMessage() {
+		return message;
 	}
 
 	public void printAnzeige() {
