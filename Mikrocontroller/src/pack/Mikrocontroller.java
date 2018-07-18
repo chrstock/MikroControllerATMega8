@@ -1,12 +1,8 @@
 package pack;
 
 /**
-<<<<<<< HEAD
  * Class to calculate Mikrocontroller - Image
-=======
- * Blub blub blub
->>>>>>> refs/heads/develop
- * 
+ *
  * @author chrstock
  *
  */
@@ -18,55 +14,25 @@ public class Mikrocontroller {
   public Mikrocontroller(String message) {
 
     this.message = message;
-<<<<<<< HEAD
-    //test message
+    // test message
     for (int i = 0; i <= message.length() - 7; i += 7) {
       translateASCII(message.substring(i, i + 7));
       printAnzeige();
     }
   }
-=======
->>>>>>> refs/heads/develop
 
-<<<<<<< HEAD
   public void setMessage(String message) {
-=======
-    for (int i = 0; i <= message.length() - 7; i += 7) {
-      translateASCII(message.substring(i, i + 7));
-      printAnzeige();
-    }
-  }
->>>>>>> refs/heads/develop
 
-<<<<<<< HEAD
     this.message = message;
   }
-=======
-  public void setMessage(String message) {
->>>>>>> refs/heads/develop
 
-<<<<<<< HEAD
   public String getMessage() {
-=======
-    this.message = message;
-  }
->>>>>>> refs/heads/develop
 
-<<<<<<< HEAD
     return this.message;
   }
-=======
-  public String getMessage() {
->>>>>>> refs/heads/develop
 
-<<<<<<< HEAD
   public void printAnzeige() {
-=======
-    return this.message;
-  }
->>>>>>> refs/heads/develop
 
-<<<<<<< HEAD
     for (char[] ledRow : this.ledDisplay) {
       for (char led : ledRow) {
         System.out.print(led + " ");
@@ -75,28 +41,9 @@ public class Mikrocontroller {
     }
     System.out.println();
   }
-=======
-  public void printAnzeige() {
->>>>>>> refs/heads/develop
 
-<<<<<<< HEAD
-  private void setAllBitLampsOff() {
-=======
-    for (char[] ledRow : this.ledDisplay) {
-      for (char led : ledRow) {
-        System.out.print(led + " ");
-      }
-      System.out.println();
-    }
-    System.out.println();
-  }
->>>>>>> refs/heads/develop
-
-<<<<<<< HEAD
-=======
   private void setAllBitLampsOff() {
 
->>>>>>> refs/heads/develop
     for (int i = 0; i < this.ledDisplay.length; i++) {
       for (int j = 0; j < this.ledDisplay[i].length; j++) {
         this.ledDisplay[i][j] = 'x';
